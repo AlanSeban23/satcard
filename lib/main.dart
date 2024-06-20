@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:satcard/Models/shop.dart';
+import 'package:satcard/Pages/chat_bot.dart';
 
 import 'package:satcard/Themes/light_mode.dart';
 import 'package:provider/provider.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const IntroPage(),
+      home: const ChatScreen(),
       theme: lightMode,
       routes: {
         '/intro_page': (context) => const IntroPage(),
