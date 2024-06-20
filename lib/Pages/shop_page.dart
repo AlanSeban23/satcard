@@ -4,7 +4,6 @@ import 'package:satcard/Models/shop.dart';
 import 'package:satcard/components/My_Drawer.dart';
 import 'package:satcard/components/My_Product_tile.dart';
 
-
 class ShopPage extends StatelessWidget {
   const ShopPage({super.key});
 
@@ -35,7 +34,7 @@ class ShopPage extends StatelessWidget {
           // shop subtitle
           Center(
             child: Text(
-              "Select from our premium products",
+              "Select from our products",
               style: TextStyle(
                   color: Theme.of(context).colorScheme.inversePrimary),
             ),
@@ -69,13 +68,15 @@ class ShopPage extends StatelessWidget {
             // CameraScreen();
           },
           child: const Icon(
-            Icons.camera_alt_rounded,
+            Icons.bubble_chart_outlined,
             color: Colors.black,
           ),
           backgroundColor: Theme.of(context).colorScheme.primary,
+          shape: CircleBorder(),
+          // elevation: 0,
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }

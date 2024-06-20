@@ -1,14 +1,14 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:satcard/Models/shop.dart';
+
 import 'package:satcard/Themes/light_mode.dart';
 import 'package:provider/provider.dart';
-import 'package:satcard/model.dart';
+import 'package:satcard/Pages/model.dart';
 
 import 'Pages/cart_page.dart';
 import 'Pages/intro_page.dart';
 import 'Pages/shop_page.dart';
-
 
 List<CameraDescription>? cameras;
 
